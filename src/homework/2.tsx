@@ -3,7 +3,7 @@ import React, {useReducer} from "react";
 
 type State = {
   isRequestInProgress: boolean;
-  requestStep: string | null;
+  requestStep: 'start'  | 'pending' | 'finished' | 'idle';
 }
 
 
